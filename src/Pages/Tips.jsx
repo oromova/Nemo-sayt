@@ -13,7 +13,7 @@ export const Tips = () => {
       </div>
       <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 '>
         {/* 1 */}
-        <div className='shadow-lg rounded-lg '>
+        <div className='shadow-lg rounded-lg animtion-transform duration-300 hover:shadow-xl hover:scale-105  animate-fadeIn'>
           <div className=''>
             <img className='rounded-tl-lg rounded-tr-lg object-cover'
              src={img1} alt="o'zbekiston" />
@@ -25,7 +25,7 @@ export const Tips = () => {
           </div>
         </div>
         {/* 2 */}
-        <div className='shadow-lg rounded-lg'>
+        <div className='shadow-lg rounded-lg animtion-transform duration-300 hover:shadow-xl hover:scale-105  animate-fadeIn'>
           <div className=''>
             <img className='rounded-tl-lg rounded-tr-lg object-cover'
              src={img2} alt="turkiya" />
@@ -37,7 +37,7 @@ export const Tips = () => {
           </div>
         </div>
         {/* 3 */}
-        <div className='shadow-lg rounded-lg'>
+        <div className='shadow-lg rounded-lg animtion-transform duration-300 hover:shadow-xl hover:scale-105  animate-fadeIn'>
           <div className=''>
             <img className='rounded-tl-lg rounded-tr-lg object-cover'
              src={img3} alt="dubay" />
@@ -50,7 +50,7 @@ export const Tips = () => {
           </div>
         </div>
         {/* 4 */}
-        <div className='shadow-lg rounded-bl-lg rounded-br-lg'>
+        <div className='shadow-lg rounded-bl-lg rounded-br-lg animtion-transform duration-300 hover:shadow-xl hover:scale-105  animate-fadeIn'>
           <div className=''>
             <img className='rounded-tl-lg rounded-tr-lg object-cover'
              src={img4} alt="yevropa" />
