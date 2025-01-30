@@ -2,6 +2,7 @@ import './App.css'
 import { Header } from './Components/Header';
 import { Main } from './Components/Main';
 import { AboutUs } from './Pages/AboutUs';
+import { Hotels } from './Pages/Hotels';
 import { Tips } from './Pages/Tips';
 
 
@@ -12,6 +13,7 @@ function App() {
       <Main/>
       <AboutUs/>
       <Tips/>
+      <Hotels/>
     </div>
   )
 }

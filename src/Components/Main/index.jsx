@@ -1,5 +1,6 @@
 import Aos from "aos";
 import { useEffect } from "react";
+import { GenericButton } from "../Generics/Button";
 
 
 export const Main = () => {
@@ -56,9 +57,7 @@ export const Main = () => {
               <p className='font-bold'>5 + yil</p>
             </div>
           </div>
-          <button className="bg-[var(--primary-color)] text-white font-medium py-2 px-5 rounded-full transition transform duration-200 ease-in-out hover:scale-105 active:scale-95">
-            Batafsil ma'lumot
-          </button>
+          <GenericButton name="Batafsil ma'lumot"/>
         </div>
       </div>
     </div>
