@@ -14,8 +14,8 @@ export const Tips = () => {
       <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 '>
         {/* 1 */}
         <div className='shadow-lg rounded-lg animtion-transform duration-300 hover:shadow-xl hover:scale-105  animate-fadeIn'>
-          <div className=''>
-            <img className='rounded-tl-lg rounded-tr-lg object-cover'
+          <div className='w-full h-[200px]'>
+            <img className='w-full h-full rounded-tl-lg rounded-tr-lg object-cover'
              src={img1} alt="o'zbekiston" />
           </div>
           <div className='p-4'>
@@ -26,8 +26,8 @@ export const Tips = () => {
         </div>
         {/* 2 */}
         <div className='shadow-lg rounded-lg animtion-transform duration-300 hover:shadow-xl hover:scale-105  animate-fadeIn'>
-          <div className=''>
-            <img className='rounded-tl-lg rounded-tr-lg object-cover'
+          <div className='w-full h-[200px]'>
+            <img className='w-full h-full rounded-tl-lg rounded-tr-lg object-cover'
              src={img2} alt="turkiya" />
           </div>
           <div className='p-4'>
@@ -38,8 +38,8 @@ export const Tips = () => {
         </div>
         {/* 3 */}
         <div className='shadow-lg rounded-lg animtion-transform duration-300 hover:shadow-xl hover:scale-105  animate-fadeIn'>
-          <div className=''>
-            <img className='rounded-tl-lg rounded-tr-lg object-cover'
+          <div className='w-full h-[200px]'>
+            <img className='w-full h-full rounded-tl-lg rounded-tr-lg object-cover'
              src={img3} alt="dubay" />
           </div>
           <div className='p-4'>
@@ -51,8 +51,8 @@ export const Tips = () => {
         </div>
         {/* 4 */}
         <div className='shadow-lg rounded-bl-lg rounded-br-lg animtion-transform duration-300 hover:shadow-xl hover:scale-105  animate-fadeIn'>
-          <div className=''>
-            <img className='rounded-tl-lg rounded-tr-lg object-cover'
+          <div className='w-full h-[200px]'>
+            <img className='w-full h-full rounded-tl-lg rounded-tr-lg object-cover'
              src={img4} alt="yevropa" />
           </div>
           <div className='p-4'>

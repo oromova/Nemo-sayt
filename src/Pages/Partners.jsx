@@ -54,6 +54,7 @@ export const Partners = () => {
               Turkish Airlines
             </p>
           </div>
+          
           {/* 1 */}
           <div>
             <img className='w-[144px] h-[96px] rounded-lg' 
