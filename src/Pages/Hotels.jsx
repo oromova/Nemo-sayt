@@ -11,7 +11,7 @@ export const Hotels = () => {
       <div className='text-center mb-16'>
         <h1 className='text-4xl font-bold mb-6'>Mehmonxonalar</h1>
       </div>
-      <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 px-5 '>
+      <div className='pb-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 px-5 '>
         {/* 1 */}
         <div className='rounded-lg shadow-lg overflow-hidden animtion-transform duration-300 hover:shadow-xl hover:scale-105  animate-fadeIn'>
             <div className='h-48'>

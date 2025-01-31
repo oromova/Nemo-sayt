@@ -3,7 +3,7 @@ import logo from '../../assets/logo.png'
 
 export const Footer = () => {
   return (
-    <footer className='w-[full] h-fit aos-init aos-animate pt-8 shadow-lg bg-white'>
+    <footer className='w-[full] aos-init aos-animate pt-8 shadow-lg bg-white'>
       <div className='bg-gray-900 w-[full] text-white mx-auto px-4 sm:px-6 lg:px-8 py-12' data-aos='fade-up'>
         <div className='grid grid-cols-1 md:grid-cols-4 gap-8'>
           <div className='space-4'>

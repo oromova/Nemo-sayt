@@ -7,6 +7,7 @@ import { Cities } from './Pages/Cities';
 import { Contact } from './Pages/Contact';
 import { Hotels } from './Pages/Hotels';
 import { Partners } from './Pages/Partners';
+import { Tickets } from './Pages/Tickets';
 import { Tips } from './Pages/Tips';
 
 
@@ -18,6 +19,7 @@ function App() {
       <AboutUs/>
       <Tips/>
       <Hotels/>
+      <Tickets/>
       <Cities/>
       <Partners/>
       <Contact/>

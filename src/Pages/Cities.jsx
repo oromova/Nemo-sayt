@@ -4,7 +4,7 @@ import GenericButton from '../Components/Generics/Button';
 export const Cities = () => {
   return (
     <div className='w-full h-fit bg-gray-50'>
-      <div className='py-8 px-4 my-2.5 w-[1200px] m-auto' id='tours'>
+      <div className='py-8 px-4 mb-2.5 w-[1200px] m-auto' id='tours'>
         <div className='text-center mb-16'>
           <h1 className='text-4xl font-bold mb-6'>Mashhur shaharlar</h1>
         </div>
