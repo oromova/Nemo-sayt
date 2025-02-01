@@ -6,12 +6,12 @@ import img3 from '../assets/about3.jpg';
 
 export const AboutUs = () => {
   return (
-    <div className='py-8 px-6'>
+    <section className='py-8 px-6' id='about'>
       <div className='text-center mb-16'>
         <h1 className='text-4xl font-bold mb-6'>Biz haqimizda</h1>
         <p className='text-xl text-gray-600'>Sizning ishonchli sayohat hamkoringiz</p>
       </div>
-      <div className='grid grid-cols-1 md:grid-cols-2 gap-12 mb-16'>
+      <div className='grid grid-cols-1 md:grid-cols-2 gap-12 mb-16 '>
         <div className='p-8 rounded-lg shadow-lg' data-aos="fade-right">
           <h2 className='text-2xl font-bold mb-4'>Bizning vazifamiz</h2>
           <p className='text-gray-600'>Har bir mijozga individual yondashuv orqali yuqori sifatli va qulay sayohat xizmatlarini taqdim etish
@@ -76,6 +76,6 @@ export const AboutUs = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };

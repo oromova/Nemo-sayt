@@ -2,7 +2,7 @@ import React from 'react';
 
 export const Contact = () => {
   return (
-    <div className='py-12 bg-gray-50'>
+    <section className='py-12 bg-gray-50' id='contact'>
       <div className='text-center mb-16'>
         <h1 className='text-4xl font-bold mb-6'>
           Biz bilan bog'lanish
@@ -93,6 +93,6 @@ export const Contact = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };

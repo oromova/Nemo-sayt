@@ -7,7 +7,7 @@ import GenericButton from '../Components/Generics/Button';
 
 export const Hotels = () => {
   return (
-    <div className='py-8' id='hotels'>
+    <section className='py-8' id='hotels'>
       <div className='text-center mb-16'>
         <h1 className='text-4xl font-bold mb-6'>Mehmonxonalar</h1>
       </div>
@@ -51,6 +51,6 @@ export const Hotels = () => {
             </div>
           </div>
       </div>
-    </div>
+    </section>
   );
 };

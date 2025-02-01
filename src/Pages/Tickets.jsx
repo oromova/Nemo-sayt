@@ -45,7 +45,7 @@ export const Tickets = () => {
                   type="number" min='1' value='4' />
               </div>
             </div>
-            <button className='w-full mt-6 bg-[var(--primary-color)] text-white py-3 rounded-md transition transform duration-200 ease-in-out hover:scale-105 active:scale-95'>
+            <button className='w-full mt-6 bg-[var(--primary-color)] text-white py-3 rounded-md transition transform duration-200 ease-in-out hover:scale-102 active:scale-95'>
               Qidirish
             </button>
           </div>
