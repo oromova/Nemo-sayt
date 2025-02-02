@@ -1,3 +1,4 @@
+import { useTranslation } from 'react-i18next';
 import img1 from '../assets/tips1.jpg'
 import img2 from '../assets/tips2.jpg'
 import img3 from '../assets/tips3.jpg'
@@ -5,11 +6,19 @@ import img4 from '../assets/tips4.jpg'
 import GenericButton from '../Components/Generics/Button';
 
 export const Tips = () => {
+    const {t, i18n} = useTranslation();
+    const laungages = localStorage.getItem('i18nextLng')
+  
+    const handleChange = (event) => {
+      const selectedLaungage = event.target.value;
+      i18n.changeLanguage(selectedLaungage)
+    }
+
   return (
     <div className='py-8 px-4 my-2.5' id='tours'>
       <div className='text-center mb-16'>
-        <h1 className='text-4xl font-bold mb-6'>Turlar</h1>
-        <p className='text-xl text-gray-600'>Eng yaxshi sayohat turlari</p>
+        <h1 className='text-4xl font-bold mb-6'>{t("Turlar")}</h1>
+        <p className='text-xl text-gray-600'>{t("Eng yaxshi sayohat turlari")}</p>
       </div>
       <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 '>
         {/* 1 */}
@@ -18,9 +27,9 @@ export const Tips = () => {
             <img className='w-full h-full rounded-tl-lg rounded-tr-lg object-cover'
              src={img1} alt="o'zbekiston" />
           </div>
-          <div className='p-4'>
-            <h1 className='font-bold text-xl mb-2'>O'zbekiston bo'ylab <br /> sayohat</h1>
-            <p className='mb-4 text-gray-600'>O'zbekistonning tarixiy va madaniy shaharlari bo'ylab safar</p>
+          <div className='p-6'>
+            <h1 className='font-bold text-xl mb-2'>{t("O'zbekiston bo'ylab sayohat")}</h1>
+            <p className='mb-4 text-gray-600'>{t("O'zbekistonning tarixiy va madaniy shaharlari bo'ylab safar")}</p>
             <GenericButton name='Batafsil'/>
           </div>
         </div>
@@ -30,9 +39,9 @@ export const Tips = () => {
             <img className='w-full h-full rounded-tl-lg rounded-tr-lg object-cover'
              src={img2} alt="turkiya" />
           </div>
-          <div className='p-4'>
-            <h1 className='font-bold text-xl mb-2'>Turkiya bo'ylab <br /> sayohat</h1>
-            <p className='mb-4 text-gray-600'>Istanbul, Antalya, Kappadokiya - eng mashhur joylar</p>
+          <div className='p-6'>
+            <h1 className='font-bold text-xl mb-7'>{t("Turkiya bo'ylab sayohat")}</h1>
+            <p className='mb-4 text-gray-600'>{t("Istanbul, Antalya, Kappadokiya - eng mashhur joylar")}</p>
             <GenericButton name='Batafsil'/>
           </div>
         </div>
@@ -42,9 +51,9 @@ export const Tips = () => {
             <img className='w-full h-full rounded-tl-lg rounded-tr-lg object-cover'
              src={img3} alt="dubay" />
           </div>
-          <div className='p-4'>
-            <h1 className='font-bold text-xl mb-2'>Dubay bo'ylab <br /> sayohat</h1>
-            <p className='mb-4 text-gray-600'>Zamonaviy arxitektura va hashamatli savdo markazlari
+          <div className='p-6'>
+            <h1 className='font-bold text-xl mb-7'>{t("Dubay bo'ylab sayohat")}</h1>
+            <p className='mb-4 text-gray-600'>{t("Zamonaviy arxitektura va hashamatli savdo markazlari")}
             </p>
             <GenericButton name='Batafsil'/>
           </div>
@@ -55,9 +64,9 @@ export const Tips = () => {
             <img className='w-full h-full rounded-tl-lg rounded-tr-lg object-cover'
              src={img4} alt="yevropa" />
           </div>
-          <div className='p-4'>
-            <h1 className='font-bold text-xl mb-2'>Yevropa bo'ylab <br /> sayohat</h1>
-            <p className='mb-4 text-gray-600'>Fransiya, Italiya, Germaniya, Ispaniya - eng go'zal shaharlar
+          <div className='p-6'>
+            <h1 className='font-bold text-xl mb-7'>{t("Yevropa bo'ylab sayohat")}</h1>
+            <p className='mb-4 text-gray-600'>{t("Fransiya, Italiya, Germaniya, Ispaniya - eng go'zal shaharlar")}
             </p>
             <GenericButton name='Batafsil'/>
           </div>
