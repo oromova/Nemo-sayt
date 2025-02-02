@@ -1,9 +1,17 @@
 import Aos from "aos";
 import { useEffect } from "react";
 import { GenericButton } from "../Generics/Button";
-
+import { useTranslation } from 'react-i18next';
 
 export const Main = () => {
+  const {t, i18n} = useTranslation();
+  const laungages = localStorage.getItem('i18nextLng')
+
+  const handleChange = (event) => {
+    const selectedLaungage = event.target.value;
+    i18n.changeLanguage(selectedLaungage)
+  }
+  
   useEffect(()=> {
     Aos.init({
       duration: 900,
@@ -15,10 +23,10 @@ export const Main = () => {
     <section id="main" className="bg-[var(--primary-color)] w-full h-[741px] text-white flex justify-center">
       <div className='flex flex-col max-w-7xl justify-center items-center '>
         <h1 className='text-3xl md:text-5xl lg:text-6xl mb-4 lg:mb-6 font-bold' data-aos="fade-up">
-          Sayohatingizni biz bilan boshlang
+         {t("Sayohatingizni biz bilan boshlang")}
         </h1>
         <p className='text-2xl pb-12' data-aos="fade-up" data-aos-delay='200'>
-          Nemo Travel - huzur uchun yo'l
+          {t("Nemo Travel - huzur uchun yo'l")}
         </p>
         <div className='rounded-full p-8 flex sm:justify-between flex-wrap justify-center items-center bg-white max-w-4xl gap-8 md:gap-16 mx-auto h-fit text-gray-800 '>
           {/* 1 */}
@@ -29,7 +37,7 @@ export const Main = () => {
               </div>
             </div>
             <div className=''>
-              <p>Mamnun mijozlar</p>
+              <p>{t("Mamnun mijozlar")}</p>
               <p className='font-bold'>45000+</p>
             </div>
           </div>
@@ -41,7 +49,7 @@ export const Main = () => {
               </div>
             </div>
             <div className=''>
-              <p>Mamlakatlar</p>
+              <p>{t("Mamlakatlar")}</p>
               <p className='font-bold'>30+</p>
             </div>
           </div>
@@ -53,7 +61,7 @@ export const Main = () => {
               </div>
             </div>
             <div className=''>
-              <p>Tajriba</p>
+              <p>{t("Tajriba")}</p>
               <p className='font-bold'>5 + yil</p>
             </div>
           </div>
