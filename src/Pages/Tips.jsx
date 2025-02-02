@@ -15,7 +15,7 @@ export const Tips = () => {
     }
 
   return (
-    <div className='py-8 px-4 my-2.5' id='tours'>
+    <section className='py-8 px-4 my-2.5' id='tours'>
       <div className='text-center mb-16'>
         <h1 className='text-4xl font-bold mb-6'>{t("Turlar")}</h1>
         <p className='text-xl text-gray-600'>{t("Eng yaxshi sayohat turlari")}</p>
@@ -72,6 +72,6 @@ export const Tips = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   )
 }
