@@ -62,7 +62,7 @@ export const Main = () => {
             </div>
             <div className=''>
               <p>{t("Tajriba")}</p>
-              <p className='font-bold'>5 + yil</p>
+              <p className='font-bold'>{t("5 + yil")}</p>
             </div>
           </div>
             <GenericButton name="Batafsil ma'lumot"/>
