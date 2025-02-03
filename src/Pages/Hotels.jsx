@@ -10,7 +10,7 @@ export const Hotels = () => {
   const laungages = localStorage.getItem('i18nextLng');
 
   return (
-    <section className='pt-' id='hotels'>
+    <section className='pt-8' id='hotels'>
       <div className='text-center mb-16'>
         <h1 className='text-4xl font-bold mb-6'>{t("Mehmonxonalar")}</h1>
       </div>
