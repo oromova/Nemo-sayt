@@ -13,7 +13,7 @@ export const AboutUs = () => {
     i18n.changeLanguage(selectedLaungage);
   };
   return (
-    <section className='py-8 px-6' id='about'>
+    <section className='py-8 px-6 overflow-hidden' id='about'>
       <div className='text-center mb-16'>
         <h1 className='text-4xl font-bold mb-6'>{t("Biz haqimizda")}</h1>
         <p className='text-xl text-gray-600'>{t("Sizning ishonchli sayohat hamkoringiz")}</p>

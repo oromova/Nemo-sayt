@@ -1,14 +1,18 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 
 export const Contact = () => {
+  const {t, i18n} = useTranslation();
+  const laungages = localStorage.getItem('i18nextLng')
+
   return (
     <section className='py-12 bg-gray-50' id='contact'>
       <div className='text-center mb-16'>
         <h1 className='text-4xl font-bold mb-6'>
-          Biz bilan bog'lanish
+          {t("Biz bilan bog'lanish")}
         </h1>
         <p className='text-xl text-gray-600'>
-          Savollaringiz bormi? Biz sizga yordam berishdan xursandmiz
+          {t("Savollaringiz bormi? Biz sizga yordam berishdan xursandmiz")}
         </p>
       </div>
       {/* modal */}
@@ -19,7 +23,7 @@ export const Contact = () => {
             {/* name */}
             <div>
               <label className='block text-gray-700 mb-2' for='name'>
-                Ismingiz
+                {t("Ismingiz")}
               </label>
               <input className='w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-nemo-dark'
                 type="text" id='name' name='name' required />
@@ -27,7 +31,7 @@ export const Contact = () => {
             {/* email */}
             <div>
               <label className='block text-gray-700 mb-2' for='name'>
-                Email manzilingiz
+                {t("Email manzilingiz")}
               </label>
               <input className='w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-nemo-dark'
                 type="text" id='email' name='email' required />
@@ -35,7 +39,7 @@ export const Contact = () => {
             {/* phone */}
             <div>
               <label className='block text-gray-700 mb-2' for='name'>
-                Telefon raqamingiz
+                {t("Telefon raqamingiz")}
               </label>
               <input className='w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-nemo-dark'
                 type="phone" id='phone' name='phone' required />
@@ -43,7 +47,7 @@ export const Contact = () => {
             {/* theme */}
             <div>
               <label className='block text-gray-700 mb-2' for='name'>
-                Mavzu
+                {t("Mavzu")}
               </label>
               <input className='w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-nemo-dark'
                 type="phone" id='phone' name='phone' required />
@@ -51,7 +55,7 @@ export const Contact = () => {
             {/* Message */}
             <div>
               <label className='block text-gray-700 mb-2' for='name'>
-                Xabaringiz
+                {t("Xabaringiz")}
               </label>
               <textarea className='w-full h-24 px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-nemo-dark'
                 type="phone" id='phone' name='phone' required />
@@ -61,19 +65,19 @@ export const Contact = () => {
              transition duration-300 ease-in-out hover:bg-gray-800 hover:scale-105 active:scale-95"
               type="submit"
             >
-              Yuborish
+              {t("Yuborish")}
             </button>
           </form>
         </div>
         <div>
           {/* 2 */}
           <div className='bg-white rounded-lg shadow-lg p-6'>
-            <h3 className='text-xl font-semibold text-dark mb-4'>Aloqa ma'lumotlari</h3>
+            <h3 className='text-xl font-semibold text-dark mb-4'>{t("Aloqa ma'lumotlari")}</h3>
             <div className='space-y-4 text-gray-600'>
-              <p>Manzil: Toshkent shahri, Muqimiy ko'chasi 44-A uy</p>
-              <p>Tel: +998 95 150 00 00</p>
+              <p>{t("Manzil: Toshkent shahri, Muqimiy ko'chasi 44-A uy")}</p>
+              <p>{t("Tel: +998 95 150 00 00")}</p>
               <p>Email: info@nemoavia.uz</p>
-              <p>Ish vaqti: Du-Sha 24 soat</p>
+              <p>{t("Ish vaqti: Du-Sha 24 soat")}</p>
             </div>
           </div>
           {/* 3 */}

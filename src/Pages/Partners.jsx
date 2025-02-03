@@ -5,15 +5,19 @@ import partner2 from '../assets/uzairways.jpg';
 import partner3 from '../assets/emirates.jpg';
 import partner4 from '../assets/centrum.jpg';
 import partner5 from '../assets/turkish.jpg';
+import { useTranslation } from 'react-i18next';
 
 export const Partners = () => {
+  const {t, i18n} = useTranslation();
+  const laungages = localStorage.getItem('i18nextLng')
+
   return (
     <div className='py-10'>
       <div className='text-center mb-8'>
-        <h1 className='text-2xl font-bold mb-6'>Hamkorlarimiz</h1>
+        <h1 className='text-2xl font-bold mb-6'>{t("Hamkorlarimiz")}</h1>
       </div>
       <Marquee>
-        <div className='grid grid-cols-10 gap-8'>
+        <div className='grid grid-cols-10 mr-8 gap-8'>
           {/* 1 */}
           <div>
             <img className='w-[144px] h-[96px] rounded-lg' 
@@ -47,7 +51,7 @@ export const Partners = () => {
             </p>
           </div>
           {/* 5 */}
-          <div>
+          <div >
             <img className='w-[144px] h-[96px] rounded-lg' 
               src={partner5} alt="turkish" />
             <p className='text-center mt-2 text-sm text-gray-700 font-medium'>

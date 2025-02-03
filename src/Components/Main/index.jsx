@@ -21,7 +21,7 @@ export const Main = () => {
 
   return (
     <section id="main" className="bg-[var(--primary-color)] w-full h-[741px] text-white flex justify-center">
-      <div className='flex flex-col max-w-7xl justify-center items-center '>
+      <div className='flex flex-col max-w-7xl justify-center items-center'>
         <h1 className='text-3xl md:text-5xl lg:text-6xl mb-4 lg:mb-6 font-bold' data-aos="fade-up">
          {t("Sayohatingizni biz bilan boshlang")}
         </h1>
