@@ -7,8 +7,8 @@ export const Tickets = () => {
   const [passengerCount, setPassengerCount] = useState(1);
 
   return (
-    <div className='pt-8' id='flights'>
-      <div className='pt-20 h-fit mt-8 bg-gray-50'>
+    <div className='pt-4' id='flights'>
+      <div className='pt-8 h-fit mt-8 bg-gray-50'>
         <div className='w-[1200px] mx-auto p-4 sm:px-6 lg:px-8'>
           <h1 className='text-4xl font-bold mb-6'>{t("Avia Chiptalar")}</h1>
           <div className='bg-white rounded-lg shadow-lg p-6 mb-12'>
