@@ -30,14 +30,14 @@ export const Header = () => {
 
   return (
     <header>
-      <nav className={`fixed w-full translation-all z-50 duration-300 ${isScrolled ? 'bg-white' : "bg-[rgb(242 101 34)]"} ${isScrolled ? "text-black" : "text-white" }`}>
+      <nav className={`fixed w-full translation-all z-50 duration-300 ${isScrolled ? 'bg-white' : "bg-[rgb(242 101 34)]"} ${isScrolled ? "text-black" : "text-white"}`}>
         <div className='max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8'>
           <div className='flex justify-between items-center h-16'>
             {/* Logo */}
             <div>
               <a href="/">
-                <img className="mt-2 w-auto h-10 hover:scale-105 transition duration-200" 
-                  src={`${isScrolled ? {logo} : {logo1}}`} alt="Logo" />
+                <img className="mt-2 w-auto h-10 hover:scale-105 transition duration-200"
+                  src={isScrolled ? logo1 : logo} alt="Logo" />
               </a>
             </div>
 
