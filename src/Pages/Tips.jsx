@@ -6,13 +6,7 @@ import img4 from '../assets/tips4.jpg'
 import GenericButton from '../Components/Generics/Button';
 
 export const Tips = () => {
-    const {t, i18n} = useTranslation();
-    const laungages = localStorage.getItem('i18nextLng')
-  
-    const handleChange = (event) => {
-      const selectedLaungage = event.target.value;
-      i18n.changeLanguage(selectedLaungage)
-    }
+    const {t} = useTranslation();
 
   return (
     <section className='px-4 my-2.5' id='tours'>
@@ -30,7 +24,9 @@ export const Tips = () => {
           <div className='p-6'>
             <h1 className='font-bold text-xl mb-2'>{t("O'zbekiston bo'ylab sayohat")}</h1>
             <p className='mb-4 text-gray-600'>{t("O'zbekistonning tarixiy va madaniy shaharlari bo'ylab safar")}</p>
-            <GenericButton name='Batafsil'/>
+            <a href="#contact">
+              <GenericButton name='Batafsil'/>
+            </a>
           </div>
         </div>
         {/* 2 */}
@@ -42,7 +38,9 @@ export const Tips = () => {
           <div className='p-6'>
             <h1 className='font-bold text-xl mb-7'>{t("Turkiya bo'ylab sayohat")}</h1>
             <p className='mb-4 text-gray-600'>{t("Istanbul, Antalya, Kappadokiya - eng mashhur joylar")}</p>
-            <GenericButton name='Batafsil'/>
+            <a href="#contact">
+              <GenericButton name='Batafsil'/>
+            </a>
           </div>
         </div>
         {/* 3 */}
@@ -55,7 +53,9 @@ export const Tips = () => {
             <h1 className='font-bold text-xl mb-7'>{t("Dubay bo'ylab sayohat")}</h1>
             <p className='mb-4 text-gray-600'>{t("Zamonaviy arxitektura va hashamatli savdo markazlari")}
             </p>
-            <GenericButton name='Batafsil'/>
+            <a href="#contact">
+              <GenericButton name='Batafsil'/>
+            </a>
           </div>
         </div>
         {/* 4 */}
@@ -68,7 +68,9 @@ export const Tips = () => {
             <h1 className='font-bold text-xl mb-7'>{t("Yevropa bo'ylab sayohat")}</h1>
             <p className='mb-4 text-gray-600'>{t("Fransiya, Italiya, Germaniya, Ispaniya - eng go'zal shaharlar")}
             </p>
-            <GenericButton name='Batafsil'/>
+            <a href="#contact">
+              <GenericButton name='Batafsil'/>
+            </a>
           </div>
         </div>
       </div>

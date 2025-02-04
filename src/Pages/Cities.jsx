@@ -4,8 +4,7 @@ import GenericButton from '../Components/Generics/Button';
 import { useTranslation } from 'react-i18next';
 
 export const Cities = () => {
-  const {t, i18n} = useTranslation();
-  const laungages = localStorage.getItem('i18nextLng')
+  const {t} = useTranslation();
 
   return (
     <div className='w-full h-fit bg-gray-50'>
@@ -23,7 +22,9 @@ export const Cities = () => {
             <div className='p-4'>
               <h1 className='font-bold text-xl mb-2'>{t("O'zbekiston bo'ylab sayohat")}</h1>
               <p className='mb-4 text-gray-600'>{t("O'zbekistonning tarixiy va madaniy shaharlari bo'ylab safar")}</p>
-              <GenericButton name='Batafsil' />
+              <a href="#contact">
+              <GenericButton name='Batafsil'/>
+              </a>
             </div>
           </div>
           {/* 2 */}
@@ -35,7 +36,9 @@ export const Cities = () => {
             <div className='p-4'>
               <h1 className='font-bold text-xl mb-2'>{t("Turkiya bo'ylab sayohat")}</h1>
               <p className='mb-4 text-gray-600'>{t("Istanbul, Antalya, Kappadokiya - eng mashhur joylar")}</p>
-              <GenericButton name='Batafsil' />
+              <a href="#contact">
+              <GenericButton name='Batafsil'/>
+              </a>
             </div>
           </div>
           {/* 3 */}
@@ -49,7 +52,9 @@ export const Cities = () => {
               <p className='mb-4 text-gray-600'>
                 {t("Zamonaviy arxitektura va hashamatli savdo markazlari")}
               </p>
-              <GenericButton name='Batafsil' />
+              <a href="#contact">
+              <GenericButton name='Batafsil'/>
+              </a>
             </div>
           </div>
           {/* 4 */}
@@ -63,7 +68,9 @@ export const Cities = () => {
               <p className='mb-4 text-gray-600'>
                 {t("Fransiya, Italiya, Germaniya, Ispaniya - eng go'zal shaharlar")}
               </p>
-              <GenericButton name='Batafsil' />
+              <a href="#contact">
+              <GenericButton name='Batafsil'/>
+              </a>
             </div>
           </div>
         </div>

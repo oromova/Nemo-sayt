@@ -8,8 +8,7 @@ import partner5 from '../assets/turkish.jpg';
 import { useTranslation } from 'react-i18next';
 
 export const Partners = () => {
-  const {t, i18n} = useTranslation();
-  const laungages = localStorage.getItem('i18nextLng')
+  const {t} = useTranslation();
 
   return (
     <div className='py-10'>

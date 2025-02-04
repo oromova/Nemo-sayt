@@ -3,8 +3,7 @@ import logo from '../../assets/logo.png'
 import { useTranslation } from 'react-i18next';
 
 export const Footer = () => {
-  const {t, i18n} = useTranslation();
-  const laungages = localStorage.getItem('i18nextLng')
+  const {t} = useTranslation();
 
   return (
     <footer className='w-[full] aos-init aos-animate pt-8 shadow-lg bg-white'>

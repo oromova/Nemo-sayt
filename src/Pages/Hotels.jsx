@@ -6,8 +6,7 @@ import GenericButton from '../Components/Generics/Button';
 import { useTranslation } from 'react-i18next';
 
 export const Hotels = () => {
-  const { t, i18n } = useTranslation();
-  const laungages = localStorage.getItem('i18nextLng');
+  const { t } = useTranslation();
 
   return (
     <section className='pt-8' id='hotels'>
@@ -24,7 +23,9 @@ export const Hotels = () => {
             <h2 className='font-semibold text-xl mb-2'>{t("Hyatt Regency Tashkent")}</h2>
             <p className='text-gray-600 mb-2'>{t("Navoiy ko'chasi 1-uy, Tashkent")}</p>
             <p className='mb-4 text-gray-700'>{t("Zamonaviy mehmonxona Toshkent markazida")}</p>
-            <GenericButton name="Batafsil ma'lumot" />
+            <a href="#contact">
+              <GenericButton name='Batafsil'/>
+            </a>
           </div>
         </div>
         {/* 2 */}
@@ -36,7 +37,9 @@ export const Hotels = () => {
             <h2 className='font-semibold text-xl mb-2'>Hilton Tashkent City</h2>
             <p className='text-gray-600 mb-2'>{t("Islom Karimov ko'chasi 2-uy, Toshkent")}</p>
             <p className='mb-4 text-gray-700'>{t("Biznes mehmonxona shahar markazida")}</p>
-            <GenericButton name="Batafsil ma'lumot" />
+            <a href="#contact">
+              <GenericButton name='Batafsil'/>
+            </a>
           </div>
         </div>
         {/* 3 */}
@@ -50,7 +53,9 @@ export const Hotels = () => {
               {t("Amir Temur ko'chasi 15-uy, Toshkent")}
             </p>
             <p className='mb-4 text-gray-700'>{t("Qulay mehmonxona diqqatiga sazovor joylar yaqinida")} </p>
-            <GenericButton name="Batafsil ma'lumot" />
+            <a href="#contact">
+              <GenericButton name='Batafsil'/>
+            </a>
           </div>
         </div>
       </div>

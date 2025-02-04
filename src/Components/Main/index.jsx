@@ -65,7 +65,9 @@ export const Main = () => {
               <p className='font-bold'>{t("5 + yil")}</p>
             </div>
           </div>
+          <a href="#contact">
             <GenericButton name="Batafsil ma'lumot"/>
+          </a>
         </div>
       </div>
     </section>

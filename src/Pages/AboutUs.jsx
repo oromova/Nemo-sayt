@@ -5,13 +5,8 @@ import img3 from '../assets/about3.jpg';
 import { useTranslation } from 'react-i18next';
 
 export const AboutUs = () => {
-  const { t, i18n } = useTranslation();
-  // const laungages = localStorage.getItem('i18nextLng');
+  const { t } = useTranslation();
 
-  const handleChange = (event) => {
-    const selectedLaungage = event.target.value;
-    i18n.changeLanguage(selectedLaungage);
-  };
   return (
     <section className='py-8 px-6 overflow-hidden' id='about'>
       <div className='text-center mb-16'>

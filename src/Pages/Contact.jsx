@@ -2,8 +2,7 @@ import React from 'react';
 import { useTranslation } from 'react-i18next';
 
 export const Contact = () => {
-  const {t, i18n} = useTranslation();
-  const laungages = localStorage.getItem('i18nextLng')
+  const {t} = useTranslation();
 
   return (
     <section className='py-12 bg-gray-50' id='contact'>

@@ -2,8 +2,7 @@ import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 
 export const Tickets = () => {
-  const { t, i18n } = useTranslation();
-  const laungages = localStorage.getItem('i18nextLng');
+  const { t } = useTranslation();
   const [passengerCount, setPassengerCount] = useState(1);
 
   return (
