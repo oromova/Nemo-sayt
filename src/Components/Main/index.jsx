@@ -4,13 +4,7 @@ import { GenericButton } from "../Generics/Button";
 import { useTranslation } from 'react-i18next';
 
 export const Main = () => {
-  const {t, i18n} = useTranslation();
-  const laungages = localStorage.getItem('i18nextLng')
-
-  const handleChange = (event) => {
-    const selectedLaungage = event.target.value;
-    i18n.changeLanguage(selectedLaungage)
-  }
+  const {t} = useTranslation();
   
   useEffect(()=> {
     Aos.init({
@@ -22,7 +16,7 @@ export const Main = () => {
   return (
     <section id="main" className="bg-[var(--primary-color)] w-full h-[741px] text-white flex justify-center">
       <div className='flex flex-col max-w-7xl justify-center items-center'>
-        <h1 className='text-3xl md:text-5xl lg:text-6xl mb-4 lg:mb-6 font-bold' data-aos="fade-up">
+        <h1 className='text-3xl md:text-5xl lg:text-6xl mb-4 lg:mb-6 font-bold overflow-hidden' data-aos="fade-up">
          {t("Sayohatingizni biz bilan boshlang")}
         </h1>
         <p className='text-2xl pb-12' data-aos="fade-up" data-aos-delay='200'>

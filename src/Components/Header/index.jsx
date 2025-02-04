@@ -37,7 +37,7 @@ export const Header = () => {
             <div>
               <a href="/">
                 <img className="mt-2 w-auto h-10 hover:scale-105 transition duration-200" 
-                    src={`${isScrolled ? 'logo' : 'logo1'}`} alt="Logo" />
+                  src={`${isScrolled ? {logo} : {logo1}}`} alt="Logo" />
               </a>
             </div>
 
