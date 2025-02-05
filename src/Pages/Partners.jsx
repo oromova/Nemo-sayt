@@ -16,7 +16,7 @@ export const Partners = () => {
         <h1 className='text-2xl font-bold mb-6'>{t("Hamkorlarimiz")}</h1>
       </div>
       <Marquee>
-        <div className='grid grid-cols-10 mr-8 gap-8'>
+        <div className='grid grid-cols-10 mr-8 gap-8 max-w-full'>
           {/* 1 */}
           <div>
             <img className='w-[144px] h-[96px] rounded-lg' 

@@ -40,15 +40,15 @@ export const Contact = () => {
   return (
     <section className='py-12 bg-gray-50' id='contact'>
       <div className='text-center mb-16'>
-        <h1 className='text-4xl font-bold mb-6'>
+        <h1 className='text-3xl md:text-4xl font-bold mb-6'>
           {t("Biz bilan bog'lanish")}
         </h1>
-        <p className='text-xl text-gray-600'>
+        <p className='text-lg md:text-xl text-gray-600'>
           {t("Savollaringiz bormi? Biz sizga yordam berishdan xursandmiz")}
         </p>
       </div>
       {/* modal */}
-      <div className='w-[1200px] mx-auto h-fit grid grid-cols-1 md:grid-cols-2 gap-8'>
+      <div className='max-w-[1200px] mx-auto h-fit grid grid-cols-1 md:grid-cols-2 gap-8'>
         {/* 1 */}
         <div className='bg-white rounded-lg shadow-lg p-6'>
           <form className='space-y-6' onSubmit={SendMessage} id='myForm'>
@@ -98,7 +98,7 @@ export const Contact = () => {
               type="submit"
               loading={loading}
             >
-              {loading ? t("Yuborilmoqda...") : t("Yuborish") }
+              {loading ? t("Yuborilmoqda...") : t("Yuborish")}
             </button>
           </form>
         </div>

@@ -56,25 +56,25 @@ export const AboutUs = () => {
           <div className="relative group">
             <div className="absolute inset-0.5 bg-gradient-to-r from-[#F26522] to-[#E85A1F] rounded-lg blur opacity-40 transition-all duration-300 group-hover:opacity-60"></div>
             <div className="relative bg-white rounded-lg shadow-lg p-8 flex items-center justify-center min-h-[120px] transition-transform duration-300 group-hover:scale-105 group-hover:shadow-xl">
-              <p className="text-xl font-medium text-gray-800">{t("Direktor")}</p>
+              <p className="text-lg md:text-xl font-medium text-gray-800">{t("Direktor")}</p>
             </div>
           </div>
           <div className="relative group">
             <div className="absolute inset-0.5 bg-gradient-to-r from-[#F26522] to-[#E85A1F] rounded-lg blur opacity-40 transition-all duration-300 group-hover:opacity-60"></div>
             <div className="relative bg-white rounded-lg shadow-lg p-8 flex items-center justify-center min-h-[120px] transition-transform duration-300 group-hover:scale-105 group-hover:shadow-xl">
-              <p className="text-xl font-medium text-gray-800">{t("Yurist")}</p>
+              <p className="text-lg md:text-xl font-medium text-gray-800">{t("Yurist")}</p>
             </div>
           </div>
           <div className="relative group">
             <div className="absolute inset-0.5 bg-gradient-to-r from-[#F26522] to-[#E85A1F] rounded-lg blur opacity-40 transition-all duration-300 group-hover:opacity-60"></div>
             <div className="relative bg-white rounded-lg shadow-lg p-8 flex items-center justify-center min-h-[120px] transition-transform duration-300 group-hover:scale-105 group-hover:shadow-xl">
-              <p className="text-xl font-medium text-gray-800">{t("Operator")}</p>
+              <p className="text-lg md:text-xl font-medium text-gray-800">{t("Operator")}</p>
             </div>
           </div>
           <div className="relative group">
             <div className="absolute inset-0.5 bg-gradient-to-r from-[#F26522] to-[#E85A1F] rounded-lg blur opacity-40 transition-all duration-300 group-hover:opacity-60"></div>
             <div className="relative bg-white rounded-lg shadow-lg p-8 flex items-center justify-center min-h-[120px] transition-transform duration-300 group-hover:scale-105 group-hover:shadow-xl">
-              <p className="text-xl font-medium text-gray-800">{t("Administrator")}</p>
+              <p className="text-lg md:text-xl font-medium text-gray-800">{t("Administrator")}</p>
             </div>
           </div>
         </div>
